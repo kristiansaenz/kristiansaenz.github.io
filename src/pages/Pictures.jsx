@@ -10,21 +10,15 @@ export const Pictures = () => {
   ]
 
   return (
-    <div>
-      <h1 className='main-font'>Pictures</h1>
-      <br />
-      <br />
-      {/* {images.map(image => (
-        <div key={image.id}>
-          <img
-            src={image.src}
-            alt={image.alt}
-            title={image.title}
-            loading='lazy'
-          />
+    <div className='flex flex-col gap-5' style={{textAlign: 'left'}}>
+      <h1 className='page-header'>Pictures</h1>
+      <div className='page-text'>
+
+
+        <div class='flex flex-col'>
+          <a data-flickr-embed="true" href="https://www.flickr.com/photos/203348799@N08" title=""><img src="https://live.staticflickr.com/65535/54698711198_6f274fd46a_c.jpg" width="600" height="400" alt="" /></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
         </div>
-      ))} */}
-      <a data-flickr-embed="true" href="https://www.flickr.com/photos/203348799@N08" title=""><img src="https://live.staticflickr.com/65535/54698711198_6f274fd46a_c.jpg" width="800" height="600" alt="" /></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+      </div>
     </div>
   )
 }
