@@ -12,7 +12,7 @@ const JobCard = ({job, index, hoveredIndex, setHoveredIndex, cardVariants}) => {
         className="rounded-lg shadow-lg border"
         style={{borderColor: '#A3C4BC', backgroundColor: '#2B3B4F'}}
         animate={{
-          height: hoveredIndex === index ? 'auto' : 150
+          height: hoveredIndex === index ? 'auto' : 'fit-content'
         }}
         transition={{type: "spring", stiffness: 300, damping: 30}}
       >
@@ -21,7 +21,7 @@ const JobCard = ({job, index, hoveredIndex, setHoveredIndex, cardVariants}) => {
             <h3 className='' style={{fontSize: '1.4em', fontFamily: 'Work Sans', fontWeight: 'bold', color: '#A3C4BC'}}>{job.position}</h3>
             <span style={{fontSize: '1.1em', fontFamily: 'JetBrains Mono', color: '#D7816A', fontWeight: 'bold'}}>{job.duration}</span>
           </div>
-          <h4 style={{fontFamily: 'Work Sans', fontSize: '2rem', fontWeight: '700', marginBottom: '2rem'}}>{job.company}</h4>
+          <h4 style={{fontFamily: 'Work Sans', fontSize: '2rem', fontWeight: '700', marginBottom: '1rem'}}>{job.company}</h4>
 
           <motion.div
             initial={false}
@@ -33,12 +33,12 @@ const JobCard = ({job, index, hoveredIndex, setHoveredIndex, cardVariants}) => {
             className="overflow-hidden"
           >
             {/* Description */}
-            <p style={{fontFamily: 'Work Sans', fontSize: '1.2rem', marginBottom: '1rem', color: '#A3C4BC'}}>{job.description}</p>
+            <p style={{fontFamily: 'Work Sans', fontSize: '1em', marginBottom: '1rem', color: '#A3C4BC'}}>{job.description}</p>
 
             {/* Bullets */}
             <ul style={{marginBottom: '2rem'}}>
               {job.bullets?.map((bullet, bulletIndex) => (
-                <li key={bulletIndex} style={{fontFamily: 'Work Sans', fontSize: '1.2rem', marginBottom: '1rem', listStyleType: 'disc', color: '#A3C4BC'}}>{`- ${bullet}`}</li>
+                <li key={bulletIndex} style={{fontFamily: 'Work Sans', fontSize: '1em', marginBottom: '1rem', listStyleType: 'disc', color: '#A3C4BC'}}>{`- ${bullet}`}</li>
               ))}
             </ul>
 

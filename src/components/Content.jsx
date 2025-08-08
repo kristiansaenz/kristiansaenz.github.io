@@ -14,7 +14,7 @@ const Content = ({view}) => {
       initial={{y: 50, opacity: 0}}
       animate={{y: 0, opacity: 1}}
       transition={{duration: 1, ease: "easeOut"}}
-      style={{margin: '6rem 5rem'}}
+      className="mx-4 my-8 md:mx-20 md:my-24"
     >
       <Component />
     </motion.div>

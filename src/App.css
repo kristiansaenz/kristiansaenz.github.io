@@ -5,11 +5,25 @@
 
 #root {
   margin: 0 auto;
-  padding: 2rem 8rem;
+  padding: 1rem 1rem;
   text-align: center;
   min-height: 100vh;
   width: 100%;
   font-family: var(--main-font)
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  #root {
+    padding: 1.5rem 4rem;
+  }
+}
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+  #root {
+    padding: 2rem 8rem;
+  }
 }
 
 .logo {
@@ -68,13 +82,13 @@
 }
 
 .title {
-  font-size: x-large;
+  font-size: large;
   font-weight: 700;
 }
 
 .opener {
   color: #E7EFC5;
-  font-size: x-large;
+  font-size: large;
   font-family: var(--text-font);
 }
 
@@ -83,23 +97,20 @@
 }
 
 .page-header {
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-weight: 700;
 }
 
 .page-text {
   font-family: 'Work Sans';
-  font-size: 1.2rem;
+  font-size: 1.2em;
   color: #A3C4BC;
 }
 
 .skill-tag {
   border-radius: 1rem;
   padding: 0.5rem 0.5rem;
-  /* border: 1px solid #D7816A; */
-  /* background-color: #D7816A; */
   color: #BFD7B5;
-  /* color: #1D2835; */
   font-family: 'Work Sans';
   font-size: 1.2rem;
   font-weight: 700;
