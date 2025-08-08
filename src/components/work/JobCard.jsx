@@ -7,6 +7,8 @@ const JobCard = ({job, index, hoveredIndex, setHoveredIndex, cardVariants}) => {
       className="ml-4 flex-1"
       onHoverStart={() => setHoveredIndex(index)}
       onHoverEnd={() => setHoveredIndex(null)}
+      onTouchStart={() => setHoveredIndex(index)} // mobile
+      onTouchEnd={() => setHoveredIndex(null)} // mobile
     >
       <motion.div
         className="rounded-lg shadow-lg border"
