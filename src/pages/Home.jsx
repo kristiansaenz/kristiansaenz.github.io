@@ -13,7 +13,7 @@ const LeftSection = () => (
 
 const RightSection = () => (
   <div class='flex-1 flex justify-center'>
-    <img src={personalImageSrc} style={({height: '25rem', borderRadius: '12rem'})} />
+    <img class='md:h-80' src={personalImageSrc} style={({borderRadius: '12rem'})} />
   </div>
 )
 
