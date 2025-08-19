@@ -6,9 +6,9 @@ const SocialsBar = () => (
     <a href='https://www.linkedin.com/in/kristian-saenz-290aa5104/' target='_blank' rel='noopener noreferrer'>
       <img src='/linkedin-logo.png' alt='My linkedin' class='w-12 h-12' />
     </a>
-    <a href='/KristianSaenz_resume2025.pdf' target='_blank' rel='noopener noreferrer'>
+    {/* <a href='/KristianSaenz_resume2025.pdf' target='_blank' rel='noopener noreferrer'>
       <img src='/resume-icon.svg' alt='My pdf resume' class='w-12 h-12' />
-    </a>
+    </a> */}
   </div>
 )
 
